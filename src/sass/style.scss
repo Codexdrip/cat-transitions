@@ -1,0 +1,181 @@
+/* Basic transition
+.screen-wipe-top{
+    width: 17%;
+    height: 100vh;
+    background: #666;
+    position: fixed;
+    z-index: 100;
+    top: -100%;
+}
+.screen-wipe-bottom{
+    width: 17%;
+    height: 100vh;
+    background: #666;
+    position: fixed;
+    z-index: 100;
+    bottom: -100%;
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 250;
+    display: none;
+}
+
+*/
+.fade-in{
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.fade-out{
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+}
+.green{
+    width: 17%;
+    height: 0%;
+    background: #BFAD54;
+    
+}
+.yellow{
+    width: 17%;
+    height: 0%;
+    background: #59492A;
+   
+}
+.red{
+    width: 17%;
+    height: 0%;
+    background: #F26E50;
+    
+}
+.blue{
+    width: 17%;
+    height: 0%;
+    background: #F29B88;
+    
+}
+.orange{
+    width: 17%;
+    height: 0%;
+    background: #590F0F;
+    
+}
+.pink{
+    width: 17%;
+    height: 0%;
+    background: #BFAD54;
+   
+    
+}
+.wipers{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+
+.bg1{
+    background: url("https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg2{
+    background: url("https://images.unsplash.com/photo-1489084917528-a57e68a79a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg3{
+    background: url("https://images.unsplash.com/photo-1516280030429-27679b3dc9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+
+
+    nav{
+        align-self: flex-end; 
+        margin: 16px 16px;
+
+        a{
+            padding: 0px 16px;
+            background: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            color: #666;
+            border-radius: 5px;
+        }
+    }
+
+
+    .title{
+        height: 90%;
+        margin-left: 32px;
+        
+
+        h1{
+            position: relative;
+            margin: 0;
+            font-size: 150px;
+            color: #F26E50;
+            overflow: hidden;
+            width: 100%;
+            height: 35%;
+
+            .hide{
+                position: absolute;
+                
+                
+                
+            }
+
+
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
